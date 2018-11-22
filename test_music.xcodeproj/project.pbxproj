@@ -12,6 +12,8 @@
 		A42445F6218FE4F6004C7C1F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A42445F4218FE4F6004C7C1F /* Main.storyboard */; };
 		A42445F8218FE4F8004C7C1F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A42445F7218FE4F8004C7C1F /* Assets.xcassets */; };
 		A42445FB218FE4F8004C7C1F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A42445F9218FE4F8004C7C1F /* LaunchScreen.storyboard */; };
+		A48C78CA219DBD0900049DD9 /* sample2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A48C78C9219DBD0900049DD9 /* sample2.mp3 */; };
+		A4998ED2219418F000A24CB7 /* sample.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A4998ED1219418F000A24CB7 /* sample.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		A42445F7218FE4F8004C7C1F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A42445FA218FE4F8004C7C1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A42445FC218FE4F8004C7C1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A48C78C9219DBD0900049DD9 /* sample2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = sample2.mp3; path = ../../../../Downloads/sample2.mp3; sourceTree = "<group>"; };
+		A4998ED1219418F000A24CB7 /* sample.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = sample.mp3; path = ../../../../Downloads/sample.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				A42445F7218FE4F8004C7C1F /* Assets.xcassets */,
 				A42445F9218FE4F8004C7C1F /* LaunchScreen.storyboard */,
 				A42445FC218FE4F8004C7C1F /* Info.plist */,
+				A4998ED1219418F000A24CB7 /* sample.mp3 */,
+				A48C78C9219DBD0900049DD9 /* sample2.mp3 */,
 			);
 			path = test_music;
 			sourceTree = "<group>";
@@ -124,6 +130,8 @@
 			files = (
 				A42445FB218FE4F8004C7C1F /* LaunchScreen.storyboard in Resources */,
 				A42445F8218FE4F8004C7C1F /* Assets.xcassets in Resources */,
+				A48C78CA219DBD0900049DD9 /* sample2.mp3 in Resources */,
+				A4998ED2219418F000A24CB7 /* sample.mp3 in Resources */,
 				A42445F6218FE4F6004C7C1F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
