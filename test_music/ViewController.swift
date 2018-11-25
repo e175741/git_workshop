@@ -5,6 +5,8 @@
 //  Created by 佐久川　政樹 on 2018/11/05.
 //  Copyright © 2018 佐久川　政樹. All rights reserved.
 //
+//  music provider : タターヤン , YJ
+
 
 import UIKit
 import AVFoundation
@@ -20,17 +22,18 @@ class ViewController: UIViewController, AVAudioPlayerDelegate,MPMediaPickerContr
     @IBOutlet weak var duration: UILabel!
     @IBOutlet weak var progress: UIProgressView!
     @IBOutlet weak var play: UIButton!
+    @IBOutlet weak var statemusic: UILabel!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // 再生する audio ファイルのパスを取得
-        let audioPath = Bundle.main.path(forResource: "sample2", ofType:"mp3")!
+        let audioPath = Bundle.main.path(forResource: "sample", ofType:"mp3")!
         let audioUrl = URL(fileURLWithPath: audioPath)
         
         
-        // auido を再生するプレイヤーを作成する
+        // audio を再生するプレイヤーを作成する
         var audioError:NSError?
         do {
             audioPlayer = try AVAudioPlayer(contentsOf: audioUrl)
@@ -55,8 +58,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate,MPMediaPickerContr
         //トータル時間の取得
         duration.text = formatTimeString(d: audioPlayer.duration)
         
-        
-        
+    
     }
     
     // ボタンがタップされた時の処理
@@ -64,10 +66,12 @@ class ViewController: UIViewController, AVAudioPlayerDelegate,MPMediaPickerContr
         if ( audioPlayer.isPlaying ){
             audioPlayer.stop()
             play.setTitle("Play", for: UIControl.State())
+            statemusic.text = "stop"
         }
         else{
             audioPlayer.play()
             play.setTitle("Stop", for: UIControl.State())
+            statemusic.text = "playing"
         }
     }
     
@@ -76,29 +80,6 @@ class ViewController: UIViewController, AVAudioPlayerDelegate,MPMediaPickerContr
         progress.setProgress(Float(currentTime),animated: true)
     }
  
-  
-    
-    // メディアアイテムピッカーでアイテムを選択完了したときに呼び出される
-    func mediaPicker(_ mediaPicker: MPMediaPickerController, didPickMediaItems mediaItemCollection: MPMediaItemCollection)  {
-        
-        // プレイヤーを止める
-        audioPlayer.stop()
-        
-        // 選択した曲情報がmediaItemCollectionに入っているので、これをplayerにセット。
-        musicPlayer.setQueue(with: mediaItemCollection)
-        
-        
-        // ピッカーを閉じる
-        dismiss(animated: true, completion: nil)
-        
-    }
-    
-    
-    // 選択がキャンセルされた場合に呼ばれる
-    func mediaPickerDidCancel(_ mediaPicker: MPMediaPickerController) {
-        // ピッカーを閉じる
-        dismiss(animated: true, completion: nil)
-    }
     
     @objc func CurrentTime(){
         //現在の再生時間
@@ -114,6 +95,10 @@ class ViewController: UIViewController, AVAudioPlayerDelegate,MPMediaPickerContr
         return time
     }
     
+    func audioPlayerDidFinishPlaying(_ player: AVAudioPlayer, successfully flag: Bool) {
+        //終了するとendを出力
+        statemusic.text = "end"
+    }
     
     
     override func didReceiveMemoryWarning() {
@@ -121,3 +106,18 @@ class ViewController: UIViewController, AVAudioPlayerDelegate,MPMediaPickerContr
         // Dispose of any resources that can be recreated.
     }
 }
+//未実装
+class audioName{
+    var audioName:String = "sample"
+    
+    var name:String{
+        get{
+            return self.audioName
+        }
+        set(audioName){
+            self.audioName = name
+        }
+    }
+}
+
+
