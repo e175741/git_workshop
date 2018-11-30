@@ -27,7 +27,10 @@ class ViewController: UIViewController,
     @IBOutlet weak var progress: UIProgressView!
     @IBOutlet weak var play: UIButton!
     @IBOutlet weak var statemusic: UILabel!
-   
+    @IBOutlet weak var create: UILabel!
+    
+    @IBAction func aaa(_ sender: Any) {
+    }
     
 
     override func viewDidLoad() {
@@ -97,6 +100,23 @@ class ViewController: UIViewController,
         
         play.isHidden = true
     }
+    
+    @IBOutlet weak var musi: UIButton!
+    
+    @IBAction func buttonTappd(_ sender : AnyObject) {
+        
+        for i in l1
+        {
+            note(begintime: i-1.0)
+        }
+        audioPlayer.play()
+        //play.setTitle("Stop", for: UIControl.State())
+        statemusic.text = "playing"
+        
+        musi.isHidden = true
+        
+    }
+    
     @IBAction func buttonTapped(_ sender : AnyObject) {
         
             for i in l1

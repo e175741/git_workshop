@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="U64-xp-EnT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="U64-xp-EnT">
     <device id="ipad9_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -66,7 +66,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="384" y="360"/>
+            <point key="canvasLocation" x="384" y="364"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="SyP-u7-Uo1">
@@ -102,29 +102,6 @@
             <point key="canvasLocation" x="383.59375" y="994.33593749999989"/>
         </scene>
         <!--View Controller-->
-        <scene sceneID="DRK-B2-iDI">
-            <objects>
-                <viewController id="yF0-nj-ZuK" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="7a5-9x-GGk">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HaQ-ZI-pV1">
-                                <rect key="frame" x="287" y="478" width="262" height="152"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Button"/>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="LeM-ZP-r3O"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="O7C-Ym-k9t" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1032" y="360"/>
-        </scene>
-        <!--View Controller-->
         <scene sceneID="XJ2-2f-VAZ">
             <objects>
                 <viewController id="U64-xp-EnT" sceneMemberID="viewController">
@@ -154,7 +131,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                 <state key="normal" title="CREATE"/>
                                 <connections>
-                                    <segue destination="yF0-nj-ZuK" kind="modal" id="uUR-rX-3pK"/>
+                                    <segue destination="d3i-cO-ucr" kind="modal" id="MMh-25-aNe"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -165,6 +142,35 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yF8-jN-ilU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="383.59375" y="-348.046875"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="jeH-RL-r7Q">
+            <objects>
+                <viewController id="d3i-cO-ucr" customClass="ViewController" customModule="Screen" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bk5-Rr-LU2">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NTE-oO-vgQ" userLabel="Play">
+                                <rect key="frame" x="274" y="671" width="220" height="91"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="buttonTappd:" destination="d3i-cO-ucr" eventType="touchUpInside" id="xHP-HR-7bt"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="cfZ-AY-HF6"/>
+                    </view>
+                    <connections>
+                        <outlet property="musi" destination="NTE-oO-vgQ" id="5pY-ly-ukC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1EF-CI-PK9" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1116" y="364"/>
         </scene>
     </scenes>
 </document>
