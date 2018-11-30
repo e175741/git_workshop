@@ -111,7 +111,7 @@ class ViewController: UIViewController,
         }
         audioPlayer.play()
         //play.setTitle("Stop", for: UIControl.State())
-        statemusic.text = "playing"
+//        statemusic.text = "playing"
         
         musi.isHidden = true
         
@@ -153,7 +153,7 @@ class ViewController: UIViewController,
     
     func audioPlayerDidFinishPlaying(_ player: AVAudioPlayer, successfully flag: Bool) {
         //終了するとendを出力
-        statemusic.text = "end"
+        //statemusic.text = "end"
         self.performSegue(withIdentifier: "ToResult", sender: nil)
     }
     
