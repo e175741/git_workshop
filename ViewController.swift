@@ -1,8 +1,8 @@
 import UIKit
 
-var Fumen: [Double] = []
+var Fumen: [Double] = [] //計測時間の配列
 class ViewController : Play_Music{
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -18,11 +18,11 @@ class ViewController : Play_Music{
     /// viewをタップされた時の処理
     @objc func viewTap(sender: UITapGestureRecognizer){
         Append_time()
-        print("タップされました")
+        print("タップされました") //テスト用の表示
         
     }
     func Append_time(){
-        Fumen.append(super.audioPlayer!.currentTime)
-        print(Fumen)
+        Fumen.append(super.audioPlayer!.currentTime) //フィールド変数(配列)に計測時間を追加
+        print(Fumen) //テスト用の表示
     }
 }
