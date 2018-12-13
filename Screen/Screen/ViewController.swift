@@ -9,7 +9,7 @@ import AVFoundation
 import MediaPlayer
 
 // MASAKI
-class ViewController: UIViewController,
+class ViewController: UIViewController,UIPickerViewDelegate,
     AVAudioPlayerDelegate,
     MPMediaPickerControllerDelegate{
     
@@ -29,18 +29,21 @@ class ViewController: UIViewController,
     @IBOutlet weak var statemusic: UILabel!
     @IBOutlet weak var create: UILabel!
     
-    @IBAction func aaa(_ sender: Any) {
-    }
-    
-
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+    //mainmenu
+        
+    //PLAY
+        
+        
+        
         // タップを定義
-        let tap = UITapGestureRecognizer(target: self, action: #selector(viewTap(sender:)))
+        //let tap = UITapGestureRecognizer(target: self, action: #selector(viewTap(sender:)))
         
         // viewにタップを登録
-        self.view.addGestureRecognizer(tap)
+        //self.view.addGestureRecognizer(tap)
         
         // 再生する audio ファイルのパスを取得
         let audioPath = Bundle.main.path(forResource: "sample", ofType:"mp3")!
@@ -61,18 +64,22 @@ class ViewController: UIViewController,
         audioPlayer.delegate = self
         audioPlayer.prepareToPlay()
         
+        
         //currentTimeを0.5秒ごとに実行
         timer = Timer.scheduledTimer(timeInterval: 0.5, target: self, selector:#selector(self.CurrentTime), userInfo: nil, repeats: true)
         //progressViewを0.001秒ごとに実行
         timer = Timer.scheduledTimer(timeInterval: 0.001, target: self, selector:#selector(self.progressView), userInfo: nil, repeats: true)
         
-        //トータル時間の取得
-        duaration.text = formatTimeString(d: audioPlayer.duration)
         
-        
+    }//viewDidLoad
+    
+    
+    
 
-    }
-
+    
+    
+   
+    
     
     
     
@@ -98,6 +105,9 @@ class ViewController: UIViewController,
         //play.setTitle("Stop", for: UIControl.State())
         statemusic.text = "playing"
         
+        duaration.text = formatTimeString(d: audioPlayer.duration)
+
+        
         play.isHidden = true
     }
     
@@ -111,7 +121,7 @@ class ViewController: UIViewController,
         }
         audioPlayer.play()
         //play.setTitle("Stop", for: UIControl.State())
-//        statemusic.text = "playing"
+        //statemusic.text = "playing"
         
         musi.isHidden = true
         
@@ -125,17 +135,32 @@ class ViewController: UIViewController,
             }
             audioPlayer.play()
             //play.setTitle("Stop", for: UIControl.State())
-            statemusic.text = "playing"
+            //statemusic.text = "playing"
         
         play.isHidden = true
     
     }
   
     
+   
+    
     @objc func progressView(){
         let currentTime = audioPlayer.currentTime / audioPlayer.duration
         progress.setProgress(Float(currentTime),animated: true)
     }
+    
+    
+    
+    
+    @IBAction func play_music() {
+        progressView()
+        CurrentTime()
+        audioPlayer.play()
+        musi.isHidden = true
+        
+    }
+    
+    
     
     
     @objc func CurrentTime(){
@@ -197,20 +222,23 @@ class ViewController: UIViewController,
 
             }
         }
-        
-        
     }
     
     
+    
+    
+}//class viewcontroller
+
+
     // viewをタップされた時の処理
     //@objc func viewTap(sender: UITapGestureRecognizer){
-     //   Append_time()
-    }
+        //Append_time()
+    //}
     func Append_time(){
-   //     Fumen.append(audioPlayer!.currentTime)
-    //    print(Fumen)
+        //Fumen.append(audioPlayer!.currentTime)
+        //print(Fumen)
     }
-    
+
 //}
 
 
