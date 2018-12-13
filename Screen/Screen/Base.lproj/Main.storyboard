@@ -17,26 +17,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kdc-wr-md0" userLabel="Statemusic">
-                                <rect key="frame" x="274" y="106" width="220" height="107"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="55"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b68-dv-6dd" userLabel="CTime">
-                                <rect key="frame" x="55" y="502" width="157" height="106"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="pSI-qV-yN1" userLabel="Progress">
-                                <rect key="frame" x="309" y="521" width="150" height="2"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </progressView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BxT-pB-hfJ" userLabel="Play">
-                                <rect key="frame" x="274" y="671" width="220" height="91"/>
+                                <rect key="frame" x="458" y="782" width="220" height="91"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="45"/>
                                 <state key="normal" title="Button"/>
@@ -44,23 +26,12 @@
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qef-ul-G3I"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jlq-qJ-lg9" userLabel="Duration">
-                                <rect key="frame" x="570" y="502" width="157" height="106"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="cTime" destination="b68-dv-6dd" id="aG9-hb-9cm"/>
-                        <outlet property="duaration" destination="Jlq-qJ-lg9" id="Ej7-LV-oK9"/>
                         <outlet property="play" destination="BxT-pB-hfJ" id="TWz-6N-uFc"/>
-                        <outlet property="progress" destination="pSI-qV-yN1" id="CAi-pe-8mx"/>
-                        <outlet property="statemusic" destination="kdc-wr-md0" id="EmX-m9-OXA"/>
                         <segue destination="OUX-gb-jrW" kind="presentation" identifier="ToResult" id="uRN-oY-ix6"/>
                     </connections>
                 </viewController>
@@ -193,7 +164,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NTE-oO-vgQ" userLabel="Play">
-                                <rect key="frame" x="274" y="671" width="220" height="91"/>
+                                <rect key="frame" x="455" y="792" width="220" height="91"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="45"/>
                                 <state key="normal" title="Button"/>
@@ -201,39 +172,18 @@
                                     <action selector="buttonTappd:" destination="d3i-cO-ucr" eventType="touchUpInside" id="xHP-HR-7bt"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="phe-Ry-pfP" userLabel="CTime">
-                                <rect key="frame" x="48" y="494" width="157" height="106"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="3Pn-h8-6fo" userLabel="Progress">
-                                <rect key="frame" x="302" y="513" width="150" height="2"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </progressView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ddk-3C-5EV" userLabel="Duration">
-                                <rect key="frame" x="508" y="477" width="260" height="140"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="cfZ-AY-HF6"/>
                     </view>
                     <connections>
-                        <outlet property="cTime" destination="phe-Ry-pfP" id="yee-vt-tPP"/>
-                        <outlet property="duaration" destination="ddk-3C-5EV" id="tRi-dL-R7U"/>
                         <outlet property="musi" destination="NTE-oO-vgQ" id="5pY-ly-ukC"/>
-                        <outlet property="progress" destination="3Pn-h8-6fo" id="UN1-5i-5Tw"/>
                         <segue destination="OUX-gb-jrW" kind="presentation" identifier="ToResult" id="vkQ-qQ-QFY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1EF-CI-PK9" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1115.625" y="363.8671875"/>
+            <point key="canvasLocation" x="1102" y="380"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>

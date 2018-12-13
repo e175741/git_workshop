@@ -61,14 +61,14 @@ class ViewController: UIViewController,UIPickerViewDelegate,
             print("Error \(error.localizedDescription)")
         }
         
-        audioPlayer.delegate = self
+        audioPlayer.delegate = self//この子消すとplay終了後result画面に飛ばない
         audioPlayer.prepareToPlay()
         
         
         //currentTimeを0.5秒ごとに実行
-        timer = Timer.scheduledTimer(timeInterval: 0.5, target: self, selector:#selector(self.CurrentTime), userInfo: nil, repeats: true)
+        //timer = Timer.scheduledTimer(timeInterval: 0.5, target: self, selector:#selector(self.CurrentTime), userInfo: nil, repeats: true)
         //progressViewを0.001秒ごとに実行
-        timer = Timer.scheduledTimer(timeInterval: 0.001, target: self, selector:#selector(self.progressView), userInfo: nil, repeats: true)
+        //timer = Timer.scheduledTimer(timeInterval: 0.001, target: self, selector:#selector(self.progressView), userInfo: nil, repeats: true)
         
         
     }//viewDidLoad
@@ -91,7 +91,8 @@ class ViewController: UIViewController,UIPickerViewDelegate,
             view2.backgroundColor = UIColor.black
             self.view.addSubview(view2)
             
-            view2.center.y += 800.0    // animationViewを上に100だけ移動させます。
+            view2.center.y += 800.0
+            // animationViewを上に100だけ移動させます。
         }, completion: nil)
     }
     
@@ -148,12 +149,13 @@ class ViewController: UIViewController,UIPickerViewDelegate,
         let currentTime = audioPlayer.currentTime / audioPlayer.duration
         progress.setProgress(Float(currentTime),animated: true)
     }
+ 
     
     
     
     
     @IBAction func play_music() {
-        progressView()
+        //progressView()
         CurrentTime()
         audioPlayer.play()
         musi.isHidden = true
@@ -175,6 +177,7 @@ class ViewController: UIViewController,UIPickerViewDelegate,
         let time:String = String(format: "%02d:%02d" ,m,s)
         return time
     }
+ 
     
     func audioPlayerDidFinishPlaying(_ player: AVAudioPlayer, successfully flag: Bool) {
         //終了するとendを出力
@@ -209,15 +212,15 @@ class ViewController: UIViewController,UIPickerViewDelegate,
             
             
             if (-0.1 <= dif && dif <= 0.1){
-             //   Decision.text = "perfect"
+                //Decision.text = "perfect"
                 num += 1
                 
             }else if((-0.5 <= dif && dif < 0.1) || (0.1 < dif && dif <= 0.5)){
-              //  Decision.text = "great"
+                //Decision.text = "great"
                 num += 1
              
             }else if( (-1.0 < dif && dif < -0.5) || (0.5 < dif  && dif < 1.0)){
-              //  Decision.text = "bad"
+                //Decision.text = "bad"
                 num += 1
 
             }
