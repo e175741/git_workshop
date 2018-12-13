@@ -223,11 +223,6 @@ class ViewController: UIViewController,UIPickerViewDelegate,
             }
         }
     }
-    
-    
-    
-    
-}//class viewcontroller
 
 
     // viewをタップされた時の処理
@@ -235,11 +230,9 @@ class ViewController: UIViewController,UIPickerViewDelegate,
         //Append_time()
     //}
     func Append_time(){
-        //Fumen.append(audioPlayer!.currentTime)
-        //print(Fumen)
+        Fumen.append(audioPlayer!.currentTime)
+        print(Fumen)
     }
 
-//}
-
-
+}//class viewcontroller
 
