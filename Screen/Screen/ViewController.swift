@@ -197,6 +197,7 @@ class ViewController: UIViewController,UIPickerViewDelegate,
     
     @objc func viewTap(sender: UITapGestureRecognizer){
         Append_time()
+        
         print("タップされました")
         
         //処理はここに
