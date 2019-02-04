@@ -59,7 +59,11 @@ class select_ViewController: UIViewController,UIPickerViewDataSource,UIPickerVie
         test = music[row]
         label.text = test
         
+        //曲選択~AppDelegate
+        let appDelegate:AppDelegate = UIApplication.shared.delegate as! AppDelegate//AppDelegateのインスタンスを取得
+        appDelegate.select = music[row] //appDelegateの変数を操作
     }
+    //~曲選択
     
 }
     

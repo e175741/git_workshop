@@ -30,8 +30,13 @@ class PlayMode: UIViewController, UIPickerViewDelegate, AVAudioPlayerDelegate, M
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //曲選択~
+        let appDelegate:AppDelegate = UIApplication.shared.delegate as! AppDelegate//AppDelegateのインスタンスを取得
+        let select = appDelegate.select
+        //~曲選択
+        
         // 再生する audio ファイルのパスを取得
-        let audioPath = Bundle.main.path(forResource: "sample", ofType:"mp3")!
+        let audioPath = Bundle.main.path(forResource: select, ofType:"mp3")!
         let audioUrl = URL(fileURLWithPath: audioPath)
         
         let tap = UITapGestureRecognizer(target: self, action: #selector(viewTap(sender:)))
