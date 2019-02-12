@@ -88,9 +88,12 @@ class PlayMode: UIViewController, UIPickerViewDelegate, AVAudioPlayerDelegate, M
     // startボタンが押された時
     @IBAction func buttonTappd(_ sender : AnyObject) {
         
+        var tag_num:Int = 0
+        
         for i in Fumen
         {
-            note(begintime: i-1.0)
+            tag_num += 1
+            note(begintime: i-1.0,tag:tag_num)
         }
         judgeLine()
         audioPlayer.play() // 音楽を再生
@@ -127,6 +130,11 @@ class PlayMode: UIViewController, UIPickerViewDelegate, AVAudioPlayerDelegate, M
                 PlayMode.badCount += 1
                 print(dif)
             }
+            self.view.subviews.forEach{
+                if $0.tag == Fumen_num{
+                    $0.removeFromSuperview()
+                }
+            }
         }
     }
     
@@ -154,7 +162,7 @@ class PlayMode: UIViewController, UIPickerViewDelegate, AVAudioPlayerDelegate, M
     }
     
     // ノーツが落ちてくる関数
-    func note(begintime:Double){
+    func note(begintime:Double,tag:Int){
         UIView.animate(withDuration: 1.21645022, delay: begintime,options: .curveLinear,
             animations: {
             
@@ -162,7 +170,7 @@ class PlayMode: UIViewController, UIPickerViewDelegate, AVAudioPlayerDelegate, M
             
             view2.backgroundColor = UIColor.white
             self.view.addSubview(view2)
-            
+            view2.tag = tag
             view2.center.y += 1124.0
         }, completion: nil)
     }
