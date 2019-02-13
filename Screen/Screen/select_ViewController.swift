@@ -14,11 +14,15 @@ class select_ViewController: UIViewController,UIPickerViewDataSource,UIPickerVie
     @IBOutlet weak var label:
         UILabel!
     
+    let appDelegate:AppDelegate = UIApplication.shared.delegate as! AppDelegate
+    
     @IBAction func aaa(_ sender: Any) {
     }
     
-    private let music = ["sample1","sample2","hoge"]
+    private let music = ["sample1","sample2"]
     var test:String = "sample1"
+    
+    static var selectTune:String = ""
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,9 +31,18 @@ class select_ViewController: UIViewController,UIPickerViewDataSource,UIPickerVie
         
         // Do any additional setup after loading the view, typically from a nib.
         
+        view.backgroundColor = UIColor.init(red: 242/255, green: 216/255, blue: 223/255, alpha: 100/100)
+        
         selector.dataSource = self
         selector.delegate = self
 
+        PlayMode.perfectCount = 0
+        PlayMode.greatCount = 0
+        PlayMode.badCount = 0
+        PlayMode.missCount = 0
+        
+        select_ViewController.selectTune = test
+        
         
     }
     
@@ -43,10 +56,18 @@ class select_ViewController: UIViewController,UIPickerViewDataSource,UIPickerVie
         return music.count
     }
     
+    func no_select() -> String{
+        let select_music : String = "sample1"
+        return select_music
+    }
+    
     // UIPickerViewの最初の表示
     func pickerView(_ pickerView: UIPickerView,
                     titleForRow row: Int,
                     forComponent component: Int) -> String? {
+        
+        
+        appDelegate.select = no_select()
         
         return music[row]
     }
@@ -58,6 +79,10 @@ class select_ViewController: UIViewController,UIPickerViewDataSource,UIPickerVie
         
         test = music[row]
         label.text = test
+        
+        //曲選択~AppDelegate
+        //AppDelegateのインスタンスを取得
+        appDelegate.select = music[row] //appDelegateの変数を操作
         
     }
     

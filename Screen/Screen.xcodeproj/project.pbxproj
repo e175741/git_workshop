@@ -7,8 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		211672B021CB37AE00FFF5ED /* Result_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211672AF21CB37AE00FFF5ED /* Result_ViewController.swift */; };
+		211672C02212A54B00FFF5ED /* CreateResult_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211672BF2212A54B00FFF5ED /* CreateResult_ViewController.swift */; };
+		211672D42213202400FFF5ED /* sample2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 211672D32213202400FFF5ED /* sample2.mp3 */; };
 		9863574D21C55C6B003C7F44 /* PlayMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9863574C21C55C6B003C7F44 /* PlayMode.swift */; };
 		986F21BA21C57EC200CAD68A /* CreateMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986F21B921C57EC200CAD68A /* CreateMode.swift */; };
+		986F21BC21C5834500CAD68A /* sample.txt in Resources */ = {isa = PBXBuildFile; fileRef = 986F21BB21C5834500CAD68A /* sample.txt */; };
+		A45F68B02213F13200E3A4E3 /* menu_haikei.png in Resources */ = {isa = PBXBuildFile; fileRef = A45F68AF2213F13200E3A4E3 /* menu_haikei.png */; };
+		A45F68B22213F13A00E3A4E3 /* perfect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A45F68B12213F13A00E3A4E3 /* perfect.mp3 */; };
+		A45F68B42213F14200E3A4E3 /* result_haikei.png in Resources */ = {isa = PBXBuildFile; fileRef = A45F68B32213F14200E3A4E3 /* result_haikei.png */; };
+		A45F68B62213F15A00E3A4E3 /* hanteisen.png in Resources */ = {isa = PBXBuildFile; fileRef = A45F68B52213F15A00E3A4E3 /* hanteisen.png */; };
+		A45F68B82213F16500E3A4E3 /* haikei.png in Resources */ = {isa = PBXBuildFile; fileRef = A45F68B72213F16500E3A4E3 /* haikei.png */; };
+		A45F68BA2213F18F00E3A4E3 /* note.png in Resources */ = {isa = PBXBuildFile; fileRef = A45F68B92213F18F00E3A4E3 /* note.png */; };
+		A45F68BE2214402D00E3A4E3 /* bad_sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A45F68BD2214402D00E3A4E3 /* bad_sound.mp3 */; };
+		A45F68C02214403800E3A4E3 /* good_sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A45F68BF2214403800E3A4E3 /* good_sound.mp3 */; };
+		A45F68C22214404700E3A4E3 /* perfect_sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A45F68C12214404700E3A4E3 /* perfect_sound.mp3 */; };
 		A839463A21BA2ECC0099F41E /* select_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A839463921BA2ECC0099F41E /* select_ViewController.swift */; };
 		A839463C21BA3D450099F41E /* MENU_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A839463B21BA3D450099F41E /* MENU_ViewController.swift */; };
 		A83EE89B21AC197C00D010CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83EE89A21AC197C00D010CD /* AppDelegate.swift */; };
@@ -18,7 +31,7 @@
 		A83EE8A521AC197D00D010CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A83EE8A321AC197D00D010CD /* LaunchScreen.storyboard */; };
 		A83EE8B021AC197D00D010CD /* ScreenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83EE8AF21AC197D00D010CD /* ScreenTests.swift */; };
 		A83EE8BB21AC197D00D010CD /* ScreenUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83EE8BA21AC197D00D010CD /* ScreenUITests.swift */; };
-		A83EE8C921AC28BE00D010CD /* sample.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A83EE8C821AC28BE00D010CD /* sample.mp3 */; };
+		A83EE8C921AC28BE00D010CD /* sample1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A83EE8C821AC28BE00D010CD /* sample1.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +52,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		211672AF21CB37AE00FFF5ED /* Result_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result_ViewController.swift; sourceTree = "<group>"; };
+		211672BF2212A54B00FFF5ED /* CreateResult_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateResult_ViewController.swift; sourceTree = "<group>"; };
+		211672D32213202400FFF5ED /* sample2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sample2.mp3; sourceTree = "<group>"; };
 		9863574C21C55C6B003C7F44 /* PlayMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayMode.swift; sourceTree = "<group>"; };
 		986F21B921C57EC200CAD68A /* CreateMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateMode.swift; sourceTree = "<group>"; };
+		986F21BB21C5834500CAD68A /* sample.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sample.txt; sourceTree = "<group>"; };
+		A45F68AF2213F13200E3A4E3 /* menu_haikei.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = menu_haikei.png; path = "../../../current/Screen 11.20.00/Screen/Assets.xcassets/menu_haikei.imageset/menu_haikei.png"; sourceTree = "<group>"; };
+		A45F68B12213F13A00E3A4E3 /* perfect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = perfect.mp3; path = "../../../current/Screen 11.20.00/Screen/Assets.xcassets/perfect.dataset/perfect.mp3"; sourceTree = "<group>"; };
+		A45F68B32213F14200E3A4E3 /* result_haikei.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = result_haikei.png; path = "../../../current/Screen 11.20.00/Screen/Assets.xcassets/result_haikei.imageset/result_haikei.png"; sourceTree = "<group>"; };
+		A45F68B52213F15A00E3A4E3 /* hanteisen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = hanteisen.png; path = "../../../current/Screen 11.20.00/Screen/Assets.xcassets/hanteisen.imageset/hanteisen.png"; sourceTree = "<group>"; };
+		A45F68B72213F16500E3A4E3 /* haikei.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = haikei.png; path = "../../../current/Screen 11.20.00/Screen/Assets.xcassets/haikei.imageset/haikei.png"; sourceTree = "<group>"; };
+		A45F68B92213F18F00E3A4E3 /* note.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = note.png; path = ../../../../Downloads/note.png; sourceTree = "<group>"; };
+		A45F68BD2214402D00E3A4E3 /* bad_sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = bad_sound.mp3; path = ../../../../Downloads/bad_sound.mp3; sourceTree = "<group>"; };
+		A45F68BF2214403800E3A4E3 /* good_sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = good_sound.mp3; path = ../../../../Downloads/good_sound.mp3; sourceTree = "<group>"; };
+		A45F68C12214404700E3A4E3 /* perfect_sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = perfect_sound.mp3; path = ../../../../Downloads/perfect_sound.mp3; sourceTree = "<group>"; };
 		A839463921BA2ECC0099F41E /* select_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = select_ViewController.swift; sourceTree = "<group>"; };
 		A839463B21BA3D450099F41E /* MENU_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MENU_ViewController.swift; sourceTree = "<group>"; };
 		A83EE89721AC197C00D010CD /* Screen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Screen.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -56,7 +82,7 @@
 		A83EE8B621AC197D00D010CD /* ScreenUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScreenUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A83EE8BA21AC197D00D010CD /* ScreenUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenUITests.swift; sourceTree = "<group>"; };
 		A83EE8BC21AC197D00D010CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A83EE8C821AC28BE00D010CD /* sample.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sample.mp3; sourceTree = "<group>"; };
+		A83EE8C821AC28BE00D010CD /* sample1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sample1.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,17 +133,30 @@
 		A83EE89921AC197C00D010CD /* Screen */ = {
 			isa = PBXGroup;
 			children = (
+				211672D32213202400FFF5ED /* sample2.mp3 */,
 				A839463921BA2ECC0099F41E /* select_ViewController.swift */,
-				A83EE8C821AC28BE00D010CD /* sample.mp3 */,
+				A83EE8C821AC28BE00D010CD /* sample1.mp3 */,
+				986F21BB21C5834500CAD68A /* sample.txt */,
 				A83EE89A21AC197C00D010CD /* AppDelegate.swift */,
 				A83EE89C21AC197C00D010CD /* ViewController.swift */,
 				9863574C21C55C6B003C7F44 /* PlayMode.swift */,
 				986F21B921C57EC200CAD68A /* CreateMode.swift */,
 				A83EE89E21AC197C00D010CD /* Main.storyboard */,
+				211672BF2212A54B00FFF5ED /* CreateResult_ViewController.swift */,
+				211672AF21CB37AE00FFF5ED /* Result_ViewController.swift */,
 				A839463B21BA3D450099F41E /* MENU_ViewController.swift */,
 				A83EE8A121AC197C00D010CD /* Assets.xcassets */,
+				A45F68B52213F15A00E3A4E3 /* hanteisen.png */,
+				A45F68B72213F16500E3A4E3 /* haikei.png */,
+				A45F68B92213F18F00E3A4E3 /* note.png */,
+				A45F68AF2213F13200E3A4E3 /* menu_haikei.png */,
+				A45F68B12213F13A00E3A4E3 /* perfect.mp3 */,
+				A45F68B32213F14200E3A4E3 /* result_haikei.png */,
+				A45F68BF2214403800E3A4E3 /* good_sound.mp3 */,
 				A83EE8A321AC197D00D010CD /* LaunchScreen.storyboard */,
+				A45F68BD2214402D00E3A4E3 /* bad_sound.mp3 */,
 				A83EE8A621AC197D00D010CD /* Info.plist */,
+				A45F68C12214404700E3A4E3 /* perfect_sound.mp3 */,
 			);
 			path = Screen;
 			sourceTree = "<group>";
@@ -245,9 +284,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				A83EE8A521AC197D00D010CD /* LaunchScreen.storyboard in Resources */,
+				A45F68B82213F16500E3A4E3 /* haikei.png in Resources */,
 				A83EE8A221AC197C00D010CD /* Assets.xcassets in Resources */,
-				A83EE8C921AC28BE00D010CD /* sample.mp3 in Resources */,
+				A45F68C22214404700E3A4E3 /* perfect_sound.mp3 in Resources */,
+				A45F68B02213F13200E3A4E3 /* menu_haikei.png in Resources */,
+				211672D42213202400FFF5ED /* sample2.mp3 in Resources */,
+				A45F68C02214403800E3A4E3 /* good_sound.mp3 in Resources */,
+				A45F68BE2214402D00E3A4E3 /* bad_sound.mp3 in Resources */,
+				A83EE8C921AC28BE00D010CD /* sample1.mp3 in Resources */,
 				A83EE8A021AC197C00D010CD /* Main.storyboard in Resources */,
+				A45F68BA2213F18F00E3A4E3 /* note.png in Resources */,
+				A45F68B42213F14200E3A4E3 /* result_haikei.png in Resources */,
+				A45F68B22213F13A00E3A4E3 /* perfect.mp3 in Resources */,
+				986F21BC21C5834500CAD68A /* sample.txt in Resources */,
+				A45F68B62213F15A00E3A4E3 /* hanteisen.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,7 +327,9 @@
 				A83EE89D21AC197C00D010CD /* ViewController.swift in Sources */,
 				A83EE89B21AC197C00D010CD /* AppDelegate.swift in Sources */,
 				A839463C21BA3D450099F41E /* MENU_ViewController.swift in Sources */,
+				211672B021CB37AE00FFF5ED /* Result_ViewController.swift in Sources */,
 				9863574D21C55C6B003C7F44 /* PlayMode.swift in Sources */,
+				211672C02212A54B00FFF5ED /* CreateResult_ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -453,13 +505,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = DL8YWPN72B;
 				INFOPLIST_FILE = Screen/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = hogecom.Screen;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Screen;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -471,13 +522,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = DL8YWPN72B;
 				INFOPLIST_FILE = Screen/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = hogecom.Screen;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Screen;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
