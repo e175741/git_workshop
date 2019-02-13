@@ -247,18 +247,86 @@
                                     <action selector="buttonTappd:" destination="VRZ-vQ-lAx" eventType="touchUpInside" id="c4r-bu-RcZ"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5tj-ZL-JBa">
+                                <rect key="frame" x="0.0" y="711" width="186" height="313"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Lane1"/>
+                                <connections>
+                                    <action selector="noteCreate1:" destination="VRZ-vQ-lAx" eventType="touchUpInside" id="QRM-NM-mPe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yrf-GE-VJb">
+                                <rect key="frame" x="194" y="711" width="186" height="313"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Lane2"/>
+                                <connections>
+                                    <action selector="noteCreate2:" destination="VRZ-vQ-lAx" eventType="touchUpInside" id="oAM-oL-rCe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QSA-oS-Pyq">
+                                <rect key="frame" x="388" y="711" width="186" height="313"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Lane3"/>
+                                <connections>
+                                    <action selector="noteCreate3:" destination="VRZ-vQ-lAx" eventType="touchUpInside" id="1ja-2i-3aI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iyJ-Pt-R7h">
+                                <rect key="frame" x="582" y="711" width="186" height="312"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Lane4"/>
+                                <connections>
+                                    <action selector="noteCreate4:" destination="VRZ-vQ-lAx" eventType="touchUpInside" id="BZU-mi-gEP"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hx1-r9-NEa">
+                                <rect key="frame" x="49" y="253" width="89" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S3j-yn-qLj">
+                                <rect key="frame" x="243" y="253" width="89" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xIh-Ql-Q8J">
+                                <rect key="frame" x="437" y="253" width="89" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DSM-lg-Ehd">
+                                <rect key="frame" x="631" y="253" width="89" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Y7Q-4Q-N28"/>
                     </view>
                     <connections>
+                        <outlet property="Lane1_noteCount" destination="hx1-r9-NEa" id="IAe-Q1-tOI"/>
+                        <outlet property="Lane2_noteCount" destination="S3j-yn-qLj" id="TMY-md-xbu"/>
+                        <outlet property="Lane3_noteCount" destination="xIh-Ql-Q8J" id="OCX-CW-pek"/>
+                        <outlet property="Lane4_noteCount" destination="DSM-lg-Ehd" id="uh7-eN-brK"/>
                         <outlet property="StartButton" destination="nJ6-8T-IPT" id="ZvO-TF-ZjM"/>
+                        <outlet property="lane1" destination="5tj-ZL-JBa" id="4PL-82-e9s"/>
+                        <outlet property="lane2" destination="Yrf-GE-VJb" id="R7Q-LP-J8g"/>
+                        <outlet property="lane3" destination="QSA-oS-Pyq" id="kWa-Hf-n87"/>
+                        <outlet property="lane4" destination="iyJ-Pt-R7h" id="r2b-Ze-UkS"/>
                         <segue destination="e9P-l7-ML5" kind="modal" identifier="Result" id="h4C-Ph-rjg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Un-gY-MO2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2495" y="432"/>
+            <point key="canvasLocation" x="2494.53125" y="431.8359375"/>
         </scene>
         <!--Create Result View Controller-->
         <scene sceneID="SZK-nF-Ape">
@@ -282,7 +350,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ノーツ数" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jJ7-Qe-WKf">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="総ノーツ数" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jJ7-Qe-WKf">
                                 <rect key="frame" x="240" y="334" width="134" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>

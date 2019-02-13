@@ -12,8 +12,10 @@
 		211672C62212F70200FFF5ED /* result_haikei.png in Resources */ = {isa = PBXBuildFile; fileRef = 211672C52212F70200FFF5ED /* result_haikei.png */; };
 		211672C82212F71400FFF5ED /* menu_haikei.png in Resources */ = {isa = PBXBuildFile; fileRef = 211672C72212F71400FFF5ED /* menu_haikei.png */; };
 		211672CA2212F72300FFF5ED /* haikei.png in Resources */ = {isa = PBXBuildFile; fileRef = 211672C92212F72300FFF5ED /* haikei.png */; };
-		211672CC2212F73400FFF5ED /* hanteisen.png in Resources */ = {isa = PBXBuildFile; fileRef = 211672CB2212F73400FFF5ED /* hanteisen.png */; };
 		211672CE2212F75100FFF5ED /* perfect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 211672CD2212F75100FFF5ED /* perfect.mp3 */; };
+		211672D02213139800FFF5ED /* note.png in Resources */ = {isa = PBXBuildFile; fileRef = 211672CF2213139800FFF5ED /* note.png */; };
+		211672D2221313A200FFF5ED /* hanteisen.png in Resources */ = {isa = PBXBuildFile; fileRef = 211672D1221313A200FFF5ED /* hanteisen.png */; };
+		211672D42213202400FFF5ED /* sample2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 211672D32213202400FFF5ED /* sample2.mp3 */; };
 		9863574D21C55C6B003C7F44 /* PlayMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9863574C21C55C6B003C7F44 /* PlayMode.swift */; };
 		986F21BA21C57EC200CAD68A /* CreateMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986F21B921C57EC200CAD68A /* CreateMode.swift */; };
 		986F21BC21C5834500CAD68A /* sample.txt in Resources */ = {isa = PBXBuildFile; fileRef = 986F21BB21C5834500CAD68A /* sample.txt */; };
@@ -52,8 +54,10 @@
 		211672C52212F70200FFF5ED /* result_haikei.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = result_haikei.png; path = ../../../../../Downloads/result_haikei.png; sourceTree = "<group>"; };
 		211672C72212F71400FFF5ED /* menu_haikei.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = menu_haikei.png; path = ../../../../../Downloads/menu_haikei.png; sourceTree = "<group>"; };
 		211672C92212F72300FFF5ED /* haikei.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = haikei.png; path = ../../../../../Downloads/haikei.png; sourceTree = "<group>"; };
-		211672CB2212F73400FFF5ED /* hanteisen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = hanteisen.png; path = ../../../../../Downloads/hanteisen.png; sourceTree = "<group>"; };
 		211672CD2212F75100FFF5ED /* perfect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = perfect.mp3; path = ../../../../../Downloads/perfect.mp3; sourceTree = "<group>"; };
+		211672CF2213139800FFF5ED /* note.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = note.png; path = ../../../../../Downloads/note.png; sourceTree = "<group>"; };
+		211672D1221313A200FFF5ED /* hanteisen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = hanteisen.png; path = ../../../../../Downloads/hanteisen.png; sourceTree = "<group>"; };
+		211672D32213202400FFF5ED /* sample2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sample2.mp3; sourceTree = "<group>"; };
 		9863574C21C55C6B003C7F44 /* PlayMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayMode.swift; sourceTree = "<group>"; };
 		986F21B921C57EC200CAD68A /* CreateMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateMode.swift; sourceTree = "<group>"; };
 		986F21BB21C5834500CAD68A /* sample.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sample.txt; sourceTree = "<group>"; };
@@ -123,6 +127,7 @@
 		A83EE89921AC197C00D010CD /* Screen */ = {
 			isa = PBXGroup;
 			children = (
+				211672D32213202400FFF5ED /* sample2.mp3 */,
 				A839463921BA2ECC0099F41E /* select_ViewController.swift */,
 				A83EE8C821AC28BE00D010CD /* sample.mp3 */,
 				986F21BB21C5834500CAD68A /* sample.txt */,
@@ -136,9 +141,10 @@
 				A839463B21BA3D450099F41E /* MENU_ViewController.swift */,
 				A83EE8A121AC197C00D010CD /* Assets.xcassets */,
 				211672C92212F72300FFF5ED /* haikei.png */,
+				211672D1221313A200FFF5ED /* hanteisen.png */,
 				211672C52212F70200FFF5ED /* result_haikei.png */,
 				211672C72212F71400FFF5ED /* menu_haikei.png */,
-				211672CB2212F73400FFF5ED /* hanteisen.png */,
+				211672CF2213139800FFF5ED /* note.png */,
 				211672CD2212F75100FFF5ED /* perfect.mp3 */,
 				A83EE8A321AC197D00D010CD /* LaunchScreen.storyboard */,
 				A83EE8A621AC197D00D010CD /* Info.plist */,
@@ -269,12 +275,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				A83EE8A521AC197D00D010CD /* LaunchScreen.storyboard in Resources */,
+				211672D02213139800FFF5ED /* note.png in Resources */,
 				A83EE8A221AC197C00D010CD /* Assets.xcassets in Resources */,
 				211672CE2212F75100FFF5ED /* perfect.mp3 in Resources */,
 				211672CA2212F72300FFF5ED /* haikei.png in Resources */,
+				211672D42213202400FFF5ED /* sample2.mp3 in Resources */,
 				A83EE8C921AC28BE00D010CD /* sample.mp3 in Resources */,
-				211672CC2212F73400FFF5ED /* hanteisen.png in Resources */,
 				A83EE8A021AC197C00D010CD /* Main.storyboard in Resources */,
+				211672D2221313A200FFF5ED /* hanteisen.png in Resources */,
 				211672C62212F70200FFF5ED /* result_haikei.png in Resources */,
 				211672C82212F71400FFF5ED /* menu_haikei.png in Resources */,
 				986F21BC21C5834500CAD68A /* sample.txt in Resources */,
